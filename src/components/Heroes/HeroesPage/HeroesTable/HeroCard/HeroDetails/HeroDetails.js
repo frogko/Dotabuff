@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 class HeroDetails extends Component {
     render() {
         return (
-            <div className="modal fade" id="modalDetails" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
+            <div className="modal fade" >
+                <div className="modal-dialog">
                     <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">{this.props.HeroDetails.name}</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <h5 className="modal-title">{this.props.HeroDetails.name}</h5>
+                        <button type="button" className="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -27,7 +27,7 @@ class HeroDetails extends Component {
                         </ul>
                     </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" className="btn btn-secondary">Close</button>
                         <button type="button" className="btn btn-primary">Save changes</button>
                     </div>
                     </div>

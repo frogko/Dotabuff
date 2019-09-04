@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class Toolbar extends Component {
     render() {
         return (
-            <div className="contaıner-fluid" style={{ backgroundColor:'#242F39', }}>
+            <div className="container-fluid" style={{ backgroundColor:'#242F39', fontWeight: 600  }}>
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-dark">
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,19 +13,19 @@ export default class Toolbar extends Component {
                         <div className="collapse navbar-collapse" id="navbar">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#">MY DOTABUFF<span className="sr-only">(current)</span></a>
+                                    <NavLink className="nav-link" to="/">MY DOTABUFF<span className="sr-only">(current)</span></NavLink>
+                                </li>
+                                <li className="nav-item" >
+                                    <NavLink to="/" className="nav-link" onMouseOver={this.props.enter}>Heroes</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Heroes</a>
+                                    <NavLink to="/" className="nav-link">Items</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Items</a>
+                                    <NavLink to="/" className="nav-link">Players</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Players</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Matches</a>
+                                    <NavLink to="/matches" className="nav-link">Matches</NavLink>
                                 </li>
                             </ul>
                         </div>

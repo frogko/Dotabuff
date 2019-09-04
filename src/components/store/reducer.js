@@ -1,13 +1,14 @@
 const initialState = {
     heroDetails: {
-        id: 0,
-        name: "",
-        primary: "",
-        spellInfoQ: "",
-        spellInfoW: "",
-        spellInfoE: "",
-        spellInfoR: ""
-    }
+        id:null,
+        name:"Abaddon",
+        primary:"",
+        spellInfoQ:"",
+        spellInfoW:"",
+        spellInfoE:"",
+        spellInfoR:"",
+    },
+    show: false
 }
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +17,16 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 heroDetails: action.details
+            }
+        case 'SET_MODALTRUE':
+            return {
+                ...state,
+                show: true
+            }
+        case 'SET_MODALFALSE':
+            return {
+                ...state,
+                show: false
             }
         default:
             return state;

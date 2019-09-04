@@ -1,0 +1,37 @@
+.no-show { display: none; }
+.nav-subhead {
+    z-index:9010;
+    width: 100%;
+}
+#nav_secondary.sticky {
+    top:47px;
+    left:0;
+    background-color:rgba(173, 172, 172, 0.95);
+}
+nav.content span,nav.content ul,nav.content li{
+    margin-left: 0.3em;
+    display:inline-block;
+}
+
+.nav-subhead a {
+    color:#fff;
+    font-size:10px;
+    font-size:1.0rem;
+    line-height:24px;
+    line-height:2.4rem;
+    padding:0 8px;
+    padding:0 0.8rem;
+    text-transform:uppercase;
+}
+.nav-subhead a:hover {
+    color:#ccc;
+}
+
+.fix {
+    position:fixed;
+}
+  nav.content ul a.on{color:#ef4019}
+  #filler {
+      background-color: grey;
+      height: 3000px;
+  }
